@@ -16,9 +16,8 @@ body {
 
 .hero {
   min-height: 52vh;
-  background: linear-gradient(rgba(8, 25, 60, 0.72), rgba(8, 25, 60, 0.72)),
-    url("https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=1400&q=80")
-      center/cover no-repeat;
+  background: linear-gradient(rgba(8, 25, 60, 0.55), rgba(8, 25, 60, 0.65)),
+    url("nitkkr.png") center/cover no-repeat;
   color: #ffffff;
   padding: 20px;
 }
