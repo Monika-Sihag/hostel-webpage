@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Green Valley Hostel</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="home">
+      <nav class="navbar">
+        <h1>Green Valley Hostel</h1>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#fees">Hostel Fees</a></li>
+          <li><a href="#leave">Leave Form</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#login">Login</a></li>
+        </ul>
+      </nav>
+      <div class="hero-content">
+        <h2>Comfortable, Safe, and Student-Friendly Hostel</h2>
+        <p>
+          A complete hostel information page with fee details, leave application,
+          map location, login area, and useful contact information.
+        </p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="about" class="card">
+        <h3>About the Hostel</h3>
+        <p>
+          Green Valley Hostel provides separate wings for boys and girls,
+          24x7 security, high-speed Wi-Fi, clean dining services, study rooms,
+          and regular medical assistance.
+        </p>
+        <div class="highlights">
+          <span>24x7 Security</span>
+          <span>Mess Facility</span>
+          <span>Wi-Fi Enabled</span>
+          <span>Power Backup</span>
+        </div>
+      </section>
+
+      <section id="fees" class="card">
+        <h3>Hostel Fee Details</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Room Type</th>
+              <th>Monthly Fee</th>
+              <th>Security Deposit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Single Sharing</td>
+              <td>INR 9,500</td>
+              <td>INR 10,000</td>
+            </tr>
+            <tr>
+              <td>Double Sharing</td>
+              <td>INR 7,200</td>
+              <td>INR 8,000</td>
+            </tr>
+            <tr>
+              <td>Triple Sharing</td>
+              <td>INR 5,800</td>
+              <td>INR 6,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="leave" class="card">
+        <h3>Leave Application Form</h3>
+        <form id="leaveForm">
+          <div class="grid-2">
+            <label>
+              Student Name
+              <input type="text" id="studentName" required />
+            </label>
+            <label>
+              Room Number
+              <input type="text" id="roomNumber" required />
+            </label>
+            <label>
+              Leave From
+              <input type="date" id="leaveFrom" required />
+            </label>
+            <label>
+              Leave To
+              <input type="date" id="leaveTo" required />
+            </label>
+          </div>
+          <label>
+            Reason for Leave
+            <textarea id="reason" rows="4" required></textarea>
+          </label>
+          <button type="submit" class="btn">Submit Leave Request</button>
+          <p id="leaveMessage" class="message" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section id="location" class="card">
+        <h3>Hostel Location</h3>
+        <p>Green Valley Hostel, Near Central Bus Stop, City Campus Road.</p>
+        <iframe
+          title="Hostel location map"
+          src="https://www.google.com/maps?q=New+Delhi&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+
+      <section id="login" class="card">
+        <h3>Student Login</h3>
+        <form id="loginForm">
+          <label>
+            Email
+            <input type="email" id="email" required />
+          </label>
+          <label>
+            Password
+            <input type="password" id="password" minlength="6" required />
+          </label>
+          <button type="submit" class="btn">Login</button>
+          <p id="loginMessage" class="message" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Contact Warden: +91 98765 43210 | Email: warden@greenvalleyhostel.in</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
