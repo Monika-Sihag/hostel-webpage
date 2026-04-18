@@ -5,6 +5,8 @@
   const leaveMessage = document.getElementById("leaveMessage");
   const loginForm = document.getElementById("loginForm");
   const loginMessage = document.getElementById("loginMessage");
+  const emailInput = document.getElementById("email");
+  const passwordInput = document.getElementById("password");
 
   function showMessage(target, text, success) {
     target.textContent = text;
@@ -53,4 +55,12 @@
     showMessage(loginMessage, "Login successful. Welcome to the Cauvery Bhawan portal (demo).", true);
     loginForm.reset();
   });
+
+  function clearLoginFeedback() {
+    loginMessage.textContent = "";
+    loginMessage.style.color = "";
+  }
+
+  emailInput.addEventListener("input", clearLoginFeedback);
+  passwordInput.addEventListener("input", clearLoginFeedback);
 })();

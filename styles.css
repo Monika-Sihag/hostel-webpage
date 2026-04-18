@@ -88,6 +88,25 @@ body {
   line-height: 1.45;
 }
 
+.card .fee-note a {
+  color: #0b4f9a;
+  font-weight: 600;
+}
+
+.info-list {
+  margin: 0 0 14px;
+  padding-left: 1.25rem;
+  color: #374151;
+}
+
+.info-list li {
+  margin-bottom: 10px;
+}
+
+.info-list li:last-child {
+  margin-bottom: 0;
+}
+
 .highlights {
   display: flex;
   gap: 10px;
