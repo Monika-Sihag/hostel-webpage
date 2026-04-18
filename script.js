@@ -40,8 +40,8 @@
     const email = document.getElementById("email").value.trim();
     const password = document.getElementById("password").value;
 
-    if (!email.endsWith("@student.edu")) {
-      showMessage(loginMessage, "Use your college email ending with @student.edu.", false);
+    if (!email.endsWith("@nitkkr.ac.in")) {
+      showMessage(loginMessage, "Use your NIT Kurukshetra email ending with @nitkkr.ac.in.", false);
       return;
     }
 
@@ -50,7 +50,7 @@
       return;
     }
 
-    showMessage(loginMessage, "Login successful. Welcome to the hostel portal.", true);
+    showMessage(loginMessage, "Login successful. Welcome to the Cauvery Bhawan portal (demo).", true);
     loginForm.reset();
   });
 })();

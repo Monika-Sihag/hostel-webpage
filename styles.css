@@ -81,6 +81,13 @@ body {
   color: #0b4f9a;
 }
 
+.fee-note {
+  margin: 0 0 14px;
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.45;
+}
+
 .highlights {
   display: flex;
   gap: 10px;
@@ -166,6 +173,14 @@ iframe {
   background: #0d1b2a;
   color: #ffffff;
   padding: 16px;
+}
+
+.footer a {
+  color: #93c5fd;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 760px) {
