@@ -34,9 +34,48 @@ body {
   gap: 20px;
 }
 
-.navbar h1 {
+.brand {
+  min-width: 0;
+}
+
+.brand-kicker,
+.hero-kicker {
+  margin: 0 0 6px;
+  font-size: clamp(0.72rem, 1.5vw, 0.85rem);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.brand-title {
   margin: 0;
-  font-size: 1.3rem;
+  font-size: clamp(1.15rem, 2.4vw, 1.55rem);
+  font-weight: 800;
+  line-height: 1.2;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.35);
+}
+
+.brand-sub,
+.hero-sub {
+  font-weight: 600;
+  opacity: 0.95;
+}
+
+.hero-title {
+  margin: 0 0 14px;
+  font-size: clamp(1.85rem, 4.2vw, 2.85rem);
+  font-weight: 800;
+  line-height: 1.15;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+}
+
+.hero-tagline {
+  margin: 0;
+  max-width: 42rem;
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.92);
 }
 
 .nav-links {
@@ -59,9 +98,8 @@ body {
   margin: 70px auto 20px;
 }
 
-.hero-content h2 {
-  margin: 0 0 12px;
-  font-size: clamp(1.6rem, 2.7vw, 2.4rem);
+.hero-content .hero-kicker {
+  margin-bottom: 10px;
 }
 
 .container {
@@ -134,7 +172,7 @@ body {
 .fee-official-notes {
   margin-top: 16px;
   padding: 14px 16px;
-  background: #e4edf8;
+  background: #9ec1eb;
   border: 1px solid #c5d4e8;
   border-radius: 8px;
 }
